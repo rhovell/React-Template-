@@ -1,0 +1,72 @@
+$white: #FFFFFF;
+
+.slider-container.teams {
+  width: 100%;
+  margin-left: 1em;
+  margin-right: auto;
+  margin-top: 1em;
+  height: 380px;
+  h2 {
+
+  }
+  .teams-slider {
+    width: 100%;
+    height: 100%;
+    font-family: Georgia;
+    .carousel {
+      min-width: 70%;
+      margin-top: 0;
+      height: 100%;
+      .slide {
+        min-width: 75%!important;
+        text-align: center;
+        background-color: $white;
+        img {
+          width: 90%;
+        }
+        p {
+          width: 90%;
+          line-height: 24px;
+          margin: auto;
+        }
+      }
+      .slider-wrapper {
+        width: 100%;
+        ul.slider.animated {
+          width: 100%;
+        }
+      }
+      .control-arrow {
+        opacity: 1;
+        &:hover {
+          background: rgba(255, 255, 255, 0.0);
+        }
+        &.control-next {
+          transform: rotate(180deg);
+          bottom: -90%;
+          right: 10px;
+          :before {
+            content: url('./images/right-arrow.svg');
+            transform: rotate(180deg);
+          }
+        }
+        &.control-prev {
+          display: none;
+          &:before {
+            display: none;
+          }
+        }
+      }
+      .control-prev.control-arrow:before,
+      .control-next.control-arrow:before {
+        content: url('./images/right-arrow.svg');
+        transform: rotate(180deg);
+      }
+      .control-dots {
+        .dot {
+          display: none;
+        }
+      }
+    }
+  }
+}

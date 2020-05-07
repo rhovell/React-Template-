@@ -1,0 +1,217 @@
+$white: #FFFFFF;
+$black: #000000;
+
+.homepage {
+
+  .homepage-hero-block {
+    .homepage-back {
+      overflow: visible;
+      .hero-block {
+        background: $white;
+        position: relative;
+        text-align: center;
+        display: flex;
+        line-height: 30px;
+        font-size: 18px;
+        height: auto;
+        h1 {
+          margin-top: 15px;
+          margin-bottom: 15px;
+        }
+        .full-text {
+          width: 90%;
+          margin-left: auto;
+          margin-right: auto;
+        }
+        .read-more-button, .read-less-button {
+          display: inline;
+          text-decoration: underline;
+          font-weight: bold;
+        }
+        .find-out-more-button {
+          background: $black;
+          margin-left: auto;
+          margin-right: auto;
+          padding: 10px;
+          border-radius: 5px;
+          margin-top: 15px;
+          a {
+            color: $white;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: bold;
+            &:visited {
+              color: $white;
+            }
+            &:hover {
+              color: $white;
+            }
+            &:active {
+              color: $white;
+            }
+          }
+          img.find-more-arrow {
+            margin-left: 15px;
+            vertical-align: text-top;
+            width: 13px;
+          }
+        }
+      }
+      &.mobile-only {
+        display: flex;
+        .background-holder {
+          min-height: 300px;
+          max-height: 710px;
+          width: 100%;
+          background: url('../backgrounds/mobile-homepage-hero@2x.png');
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+          height: auto;
+          position: relative;
+        }
+        .hero-block {
+          margin: 2em 1em;
+          padding: 1em 1.5em;
+          text-align: center;
+          font-size: 18px;
+          min-height: 250px;
+          max-height: 610px;
+          height: auto;
+          h1 {
+            margin-top: 15px;
+            margin-bottom: 15px;
+          }
+          .find-out-more-button {
+            width: 90%;
+            margin-top: 15px;
+          }
+        }
+
+      }
+      &.desktop-only {
+        .background-holder {
+          min-height: 400px;
+          max-height: 600px;
+          width: 100%;
+          background: url('../backgrounds/homepagehero@2x.png');
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+          height: auto;
+          position: relative;
+        }
+        .hero-block {
+          margin: 2em;
+          padding: 1em 1.5em;
+          min-height: 300px;
+          max-height: 450px;
+          height: auto;
+          top: 1em;
+          width: 70%;
+          margin-left: auto;
+          margin-right: auto;
+          .find-out-more-button {
+            width: 30%;
+            margin-top: 15px;
+          }
+        }
+      }
+    }
+  }
+  .Smoothie-book {
+    padding: 1em;
+    width: 100%;
+    .image-holder {
+      height: 310px;
+      overflow: hidden;
+      img.smoothy-book {
+        width: 100%;
+      }
+    }
+    h3 {
+      text-align: center;
+    }
+    p {
+      text-align: center;
+      font-size: 18px;
+      line-height: 30px;
+    }
+    .find-out-more-button {
+      background: $black;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 10px;
+      border-radius: 5px;
+      margin-top: 15px;
+      width: 70%;
+      text-align: center;
+      a {
+        color: $white;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: bold;
+        &:visited {
+          color: $white;
+        }
+        &:hover {
+          color: $white;
+        }
+        &:active {
+          color: $white;
+        }
+      }
+      img.find-more-arrow {
+        margin-left: 15px;
+        vertical-align: text-top;
+        width: 13px;
+      }
+    }
+  }
+  .recipes-section {
+    padding: 1em;
+    line-height: 30px;
+    font-size: 18px;
+    text-align: center;
+    .image-holder {
+      width: 100%;
+      img {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+      }
+      h3 {
+
+      }
+    }
+    .view-more {
+      a {
+        color: $black;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: bold;
+        &:visited {
+          color: $black;
+        }
+        &:hover {
+          color: $black;
+        }
+        &:active {
+          color: $black;
+        }
+        .view-more-button {
+          padding: 10px;
+          width: 90%;
+          border: 2px solid $black;
+          margin: auto;
+          border-radius: 5px;
+
+          img {
+            margin-left: 5px;
+            transform: rotate(180deg);
+          }
+        }
+      }
+    }
+  }
+}

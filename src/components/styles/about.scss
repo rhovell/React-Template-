@@ -1,0 +1,35 @@
+$black: #000000;
+.about-page {
+  padding: 1em;
+
+  .camels {
+    width: 100%;
+    background-image: url('../backgrounds/camels@2x.png');
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+    height: 170px;
+  }
+  .main-area {
+    text-align: center;
+    .full-text, .cropped-text {
+      width: 90%;
+      line-height: 30px;
+      font-size: 18px;
+      margin: auto;
+      margin-bottom: 2em;
+      .read-more-button, .read-less-button {
+        display: inline;
+        text-decoration: underline;
+        font-weight: bold;
+      }
+    }
+  }
+  .image-holder {
+    width: 100%;
+    margin-top: 1em;
+    img {
+      width: 100%;
+    }
+  }
+}
