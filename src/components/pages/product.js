@@ -6,26 +6,26 @@ class ProductPage extends React.Component {
   state = {
     product: [{}]
   }
-  componentDidMount (props) {
-    const { id } = this.props.match.params
-
-    fetch(`https://xifv82wash.execute-api.eu-west-2.amazonaws.com/01/products/${id}`, {
-      "method": "GET",
-      "headers": {
-        "content-type": "application/json",
-        "accept": "application/json"
-      }
-    })
-    .then(response => response.json())
-    .then(product => {
-      this.setState({
-        product: product
-      })
-    })
-    .catch(err => {
-      console.log('no products', err);
-    });
-  }
+  // componentDidMount (props) {
+  //   const { id } = this.props.match.params
+  //
+  //   fetch(`https://xifv82wash.execute-api.eu-west-2.amazonaws.com/01/products/${id}`, {
+  //     "method": "GET",
+  //     "headers": {
+  //       "content-type": "application/json",
+  //       "accept": "application/json"
+  //     }
+  //   })
+  //   .then(response => response.json())
+  //   .then(product => {
+  //     this.setState({
+  //       product: product
+  //     })
+  //   })
+  //   .catch(err => {
+  //     console.log('no products', err);
+  //   });
+  // }
   render() {
     const product = this.state.product
     var productNo = product.id;

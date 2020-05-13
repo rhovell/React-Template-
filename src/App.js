@@ -9,7 +9,7 @@ import Testimonials from './components/pages/testimonials.js'
 import ProductPage from './components/pages/ProductPage.js'
 import Faq from './components/pages/faq.js'
 import Notfound from './components/pages/notfound.js'
-
+import ProductPageTemp from './components/pages/ProductPage.js'
 
 
 
@@ -42,6 +42,7 @@ class App extends Component {
       }
     })
     .then(response => response.json())
+    // .then(response => console.log(response))
     .then(products => {
       this.setState({
         products: products,
@@ -112,6 +113,7 @@ class App extends Component {
           <Route path="/shop" render={()=><Shop products={productList}/>}/>
           <Route path="/about" component={About} />
           <Route path="/testimonials" component={Testimonials} />
+          <Route path="/product/:productName" component={ProductPageTemp} />
         </div>
       </Router>
     );
